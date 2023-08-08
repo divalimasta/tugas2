@@ -1,35 +1,35 @@
-nama : diva limasta 
-kelas : 12 rpl 1
-
-def show_menu():
-    print("===== Menu Navigasi =====")
-    print("1. Home")
-    print("2. About")
-    print("3. Contact")
-    print("4. Exit")
-
-def navigate_to(option):
-    if option == 1:
-        print("Navigating to Home Page")
-    elif option == 2:
-        print("Navigating to About Page")
-    elif option == 3:
-        print("Navigating to Contact Page")
-    elif option == 4:
-        print("Exiting the navigation")
-    else:
-        print("Invalid option")
-
-if __name__ == "__main__":
-    while True:
-        show_menu()
-        choice = input("Enter your choice: ")
-
-        try:
-            choice = int(choice)
-            navigate_to(choice)
-
-            if choice == 4:
-                break
-        except ValueError:
-            print("Invalid input. Please enter a number.")
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Biodata</title>
+</head>
+<body>
+    <h1>Biodata</h1>
+    <table>
+        <tr>
+            <td>Nama:</td>
+            <td>Diva Limasta </td>
+        </tr>
+        <tr>
+            <td>Usia:</td>
+            <td>17 Tahun</td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin:</td>
+            <td>Perempuan</td>
+        </tr>
+        <tr>
+            <td>Alamat:</td>
+            <td>Rowotengu - Sidomulyo</td>
+        </tr>
+        <tr>
+            <td>Sekolah:</td>
+            <td>SMKN 6 JEMBER</td>
+        </tr>
+    </table>
+</body>
+</html>
